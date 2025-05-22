@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/art_studio"
+    tools:context=".MainActivity">
+
+    <!-- color choice -->
+    <TextView
+        android:id="@+id/color_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="casual"
+        android:text="Choose a Color"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/red_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:padding="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/red_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_choice" />
+
+    <ImageButton
+        android:id="@+id/blue_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:padding="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/blue_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_choice" />
+
+    <ImageButton
+        android:id="@+id/green_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent"
+        android:padding="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/green_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_choice" />
+
+
+    <!-- categories -->
+    <TextView
+        android:id="@+id/category_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="casual"
+        android:text="Choose a Category"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_button" />
+
+    <Button
+        android:id="@+id/drink_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#D73838"
+        android:text="Drink"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_choice" />
+
+    <Button
+        android:id="@+id/fruit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="12dp"
+        android:text="Fruit"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_choice" />
+
+    <Button
+        android:id="@+id/cartoon_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#E8DD0E"
+        android:text="Cartoon"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_choice" />
+
+    <TextView
+        android:id="@+id/selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="casual"
+        android:text="Selection: "
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fruit_btn" />
+
+    <ImageView
+        android:id="@+id/result_image"
+        android:layout_width="213dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="12dp"
+        android:text="Result here"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_image" />
+
+    <Button
+        android:id="@+id/instructions_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="776dp"
+        android:backgroundTint="#DF7272"
+        android:text="Instructions"
+        android:textColor="#0D0C0C"
+        android:textColorLink="#A32828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- pop-up modal -->
+    <FrameLayout
+        android:id="@+id/modal_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/sticky_note"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/modal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructions:\n1. Choose a color.\n2. Choose a category.\n3. See the result below!"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/modal_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
